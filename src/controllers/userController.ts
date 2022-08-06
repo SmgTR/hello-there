@@ -50,7 +50,10 @@ export const logInUser = async (req: Request, res: Response) => {
     const jwtToken = generateJWT(user.email, user.id);
 
     return res.json({ token: jwtToken });
-  } catch {
-    return res.status(400).json({ message: 'Something went wrong, check provided data' });
+  } catch (err) {
+    const error = err as Error;
+    return res.status(400).json({
+      message: error.message ? error.message : 'Something went wrong, check provided data'
+    });
   }
 };
