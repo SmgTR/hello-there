@@ -4,8 +4,7 @@ import axios from 'axios';
 
 import Weather from '@/models/weather';
 
-export const setWeather = nodeCron.schedule('00 00 */1 * * *', async () => {
-  //check if weather info already exist
+export const setWeather = async () => {
   const weatherExist = await Weather.findByPk(1);
 
   await axios
@@ -34,4 +33,8 @@ export const setWeather = nodeCron.schedule('00 00 */1 * * *', async () => {
         });
       }
     });
+};
+
+export const setWeatherCron = nodeCron.schedule('00 00 */1 * * *', async () => {
+  await setWeather();
 });
