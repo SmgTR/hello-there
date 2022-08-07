@@ -2,7 +2,7 @@ import express from 'express';
 import bodyParser from 'body-parser';
 import passport from 'passport';
 
-import { usersRouter, swRouter } from '@/routes';
+import { usersRouter, swRouter, weatherRouter } from '@/routes';
 import { strategy } from '@/auth/passport';
 
 function createServer() {
@@ -14,7 +14,7 @@ function createServer() {
 
   passport.use(strategy);
 
-  app.use('/api/v1', usersRouter);
+  app.use('/api/v1', usersRouter, weatherRouter);
   app.use('/api/v1/starwars', swRouter);
 
   return app;
