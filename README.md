@@ -6,7 +6,7 @@ External API's: swapi.dev, openweathermap.org
 
 ### Setup environment
 
-This project requires local .env files in root directory to run correctly.
+This project requires local .env files in root directory to run correctly.<br>
 Required env values:
 
 ```
@@ -25,8 +25,7 @@ JWT_SECRET= <Secret_to_generate_jwt_token>
 ```
 
 ### Endpoints
-User:
-
+User:<br>
 Register user: ```/api/v1/register```</br>
 Login user: ```/api/v1/login```
 
