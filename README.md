@@ -1,5 +1,6 @@
-# HelloThere <img  alt="Hello" width="20" height="20" src="https://c.tenor.com/Wx9IEmZZXSoAAAAj/hi.gif">
+# HelloThere
 
+<img alt="Hello there" width="480" height="208" src="https://media1.giphy.com/media/xTiIzJSKB4l7xTouE8/giphy.gif">
 
 ### Node TS + SQL server
 External API's: swapi.dev, openweathermap.org
