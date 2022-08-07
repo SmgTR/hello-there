@@ -1,7 +1,8 @@
-import createServer from '@/utils/server';
 import supertest from 'supertest';
 
 import { dummyUserInput } from './testsData';
+
+import createServer from '@/utils/server';
 
 import { User } from '@/models';
 
