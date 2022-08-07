@@ -3,11 +3,11 @@ import 'dotenv/config';
 import sequelize from '@/utils/database';
 
 import createServer from '@/utils/server';
-import { setWeather } from '@/utils/weatherCron';
+import { setWeatherCron } from '@/utils/weatherCron';
 
 const app = createServer();
 
-setWeather.start();
+setWeatherCron.start();
 
 sequelize
   .sync()
