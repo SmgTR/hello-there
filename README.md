@@ -33,4 +33,11 @@ Login user: ```/api/v1/login```
 Star wars characters:<br>
 Get all characters: ```/api/v1/starwars/getall/```<br> Available page quering eg. ```/?page=2``` also if page is declared, you can use ```&format=wookiee``` to get data in wookie's language.
 
+Get filtered characters (required Authorization: Bearer token):<br>
+```/api/v1/starwars/getfiltered/```<br> Available quering by values from people object swapi.dev
+
+Weather (required Authorization: Bearer token):<br>
+```/api/v1/weather```<br>
+Weather data updates every hour.
+
 
